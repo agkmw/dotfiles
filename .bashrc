@@ -23,3 +23,6 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 unset rc
+
+export SHELL=`which zsh`
+[ -z "$ZSH_VERSION" ] && exec "$SHELL" -l
